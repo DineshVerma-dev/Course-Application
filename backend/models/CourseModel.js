@@ -7,13 +7,13 @@ const CourseSchema = new Schema({
     },
     description: String,
     price : {
-        type : number,
+        type : Number,
         min : 50,
         max :100000
     },
     ImageUrl :String,
     creator: {
-        type : mongoose.Schema.Types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref : "AdminModel",
     }
 })

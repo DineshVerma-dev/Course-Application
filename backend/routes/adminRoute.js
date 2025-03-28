@@ -1,10 +1,10 @@
 import { Router} from "express";
+import { AdminModel } from "../models/AdminModel.js";
 
+const router = Router();
 
-const Router = Router();
-
-Router.get("/admin",function(req,res)  {
+router.get("/admin",function(req,res)  {
     console.log("addmin router")
 })
 
-export default Router
+export default router

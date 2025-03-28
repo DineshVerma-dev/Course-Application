@@ -1,5 +1,5 @@
 import { Router } from "express";
-
+import { UserModel } from "../models/UserModel.js";
 const router = Router();
 
 router.post("/signUp",(req,res) => {

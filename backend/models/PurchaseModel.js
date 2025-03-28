@@ -1,6 +1,6 @@
-import  { Schema } from "mongoose";
+import { model ,Schema } from "mongoose";
 
-const PurchaseModel = new PurchaseSchema({
+const Purchaseschema = new Schema({
     user:{
         type : Schema.Types.ObjectId,
         ref : "UserModel",
@@ -10,3 +10,6 @@ const PurchaseModel = new PurchaseSchema({
         ref : "CourseModel"
     }
 })
+
+const PurchaseModel = model("PurchaseModel",Purchaseschema)
+export default  PurchaseModel

@@ -1,5 +1,5 @@
 import { Router } from "express";
-
+import { CourseModel } from "../models/CourseModel.js";
 const router = Router();
 
 router.get("/course/purchase",(req,res) => {
