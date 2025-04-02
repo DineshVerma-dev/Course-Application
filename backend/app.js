@@ -9,6 +9,7 @@ app.use(express.json())
 const PORT = 3000;
 connectDB();
 
+
 app.use("/api/v1/user",userRouter)
 app.use("/api/v1/courses",courseRouter)
 app.use("/api/v1/admin",adminRouter)
